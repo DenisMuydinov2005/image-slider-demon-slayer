@@ -1,0 +1,86 @@
+:root {
+    --shadow-color: rgba(0, 0, 0, 0.11);
+}
+
+footer {
+    height: 20vh;
+}
+
+.title {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 250px;
+    box-shadow: 20px  30px 10px 20px var(--shadow-color);
+    border-radius: 50%;
+    padding: 0;
+}
+
+.slider {
+    position: relative;
+    margin: auto;
+    width: 750px;
+}
+
+.slider img {
+    height: 40rem;
+    display: none;
+    margin: auto auto;
+    background-color: red;
+}
+
+.slider img:hover {
+    border: 5px inset rgba(51, 9, 9, 0.719);
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+    box-shadow: 20px  30px 10px 20px var(--shadow-color);
+    border: 5px inset rgba(63, 1, 1, 0.205);
+    border-radius: 30%;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(102, 1, 1, 0.678);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.slider button:hover {
+    color: rgba(0, 0, 0, 0.527);
+}
+
+.previous {
+    left: 1;
+}
+
+.next {
+    right: 0;
+}
+
+#pr-btn {
+    box-shadow: 5px  5px 5px 0px var(--shadow-color);
+    
+}
+
+#next-btn {
+    box-shadow: -5px  5px 5px 0px var(--shadow-color);
+
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
